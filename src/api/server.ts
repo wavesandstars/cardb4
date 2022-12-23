@@ -2,7 +2,7 @@ let token = '8f4f14810318bd039f8bdf2b946ce9659d52505ff6b950f1';
 
 export const server_calls = {
     get: async () => {
-        const response = await fetch(`https://fern-sprout-milk.glitch.me/api/cars`,{
+        const response = await fetch(`http://fern-sprout-milk.glitch.me/api/cars`,{
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -18,7 +18,7 @@ export const server_calls = {
     },
 
     create: async(data: any = {}) => {
-        const response = await fetch(`https://fern-sprout-milk.glitch.me/api/cars`,{
+        const response = await fetch(`http://fern-sprout-milk.glitch.me/api/cars`,{
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -35,7 +35,7 @@ export const server_calls = {
 		},
     
         update: async (id:string, data:any = {}) => {
-            const response = await fetch(`https://fern-sprout-milk.glitch.me/api/cars/${id}`, {
+            const response = await fetch(`http://fern-sprout-milk.glitch.me/api/cars/${id}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -46,7 +46,7 @@ export const server_calls = {
         },
     
         delete: async(id:string) => {
-            const response = await fetch(`https://fern-sprout-milk.glitch.me/api/cars/${id}`,{
+            const response = await fetch(`http://fern-sprout-milk.glitch.me/api/cars/${id}`,{
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json',
